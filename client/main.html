@@ -1,0 +1,14 @@
+<head>
+  <title>socialBook</title>
+</head>
+
+<body>
+    <div class="container">
+        {{> loginButtons}}
+        {{#if currentUser}}
+            {{> addProfile}}
+        {{/if}}
+        {{> profFilter}}
+        {{> myAccounts}}
+    </div>
+</body>

@@ -1,0 +1,54 @@
+<template name="editProfile">  
+        <!-- Modal -->      
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit a user profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="editData">
+                        <div class="previewImg text-center">
+                            <img id="editImg" src="blankprofile.png" alt="">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="editImgLabel">Image Path</span>
+                            <input type="text" class="form-control" id="editPic" placeholder="Path to image" aria-label="Profile Image" aria-describedby="profImgLabel">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="editfnameLabel">First Name</span>
+                            <input type="text" class="form-control" id="editfirstName" placeholder="First Name" aria-label="First name" aria-describedby="fnameLabel">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="editlnameLabel">Last Name</span>
+                            <input type="text" class="form-control" id="editlastName" placeholder="Last Name" aria-label="Last name" aria-describedby="lnameLabel">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="editcAgeLabel">Current Age</span>
+                            <input type="text" class="form-control" id="editage" placeholder="Current Age" aria-label="Current Age" aria-describedby="cAgeLabel">
+                        </div>  
+                        
+                        <div class="input-group mb-3">
+                            <input class="form-check-input mx-2" type="radio" name="genderRadio" value="male">
+                            <label class="form-check-label" for="flexRadioDefault1">Male</label>
+                            <input class="form-check-input mx-2" type="radio" name="genderRadio" value="female" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">Female</label>
+                        </div>
+                        <input type="hidden" id="editID">
+                    </div>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary js-closeEdit" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary js-saveEdit" >Save changes</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</template>
+
+   
